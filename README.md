@@ -1,3 +1,5 @@
+Nama: Salwa Faiha NIM: 101230115 Kelas: TF23C
+
 # Teras Coklat — Loyalty Program
 
 Sebuah aplikasi PHP sederhana untuk program loyalitas "Teras Coklat".
