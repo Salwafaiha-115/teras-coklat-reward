@@ -1,0 +1,23 @@
+name: PHP Lint
+
+on:
+  push: {}
+  pull_request: {}
+
+jobs:
+  lint:
+    name: PHP Syntax Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: PHP - Syntax check
+        run: |
+          echo "Running php -l on all .php files"
+          find . -type f -name "*.php" -not -path "./vendor/*" -print0 | xargs -0 -n1 -P4 -I{} php -l {}
