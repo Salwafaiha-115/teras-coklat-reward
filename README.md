@@ -13,6 +13,12 @@ Sebuah aplikasi PHP sederhana untuk program loyalitas "Teras Coklat".
 2. Mulai Apache dan MySQL lewat XAMPP Control Panel.
 3. Buka browser ke `http://localhost/es_coklat`.
 
+## Persiapan Lokal
+1. Pastikan XAMPP / Apache dan MySQL aktif.
+2. Buat database MySQL dengan nama sesuai konfigurasi.
+3. Sesuaikan koneksi database di `config/koneksi.php`.
+4. Akses aplikasi melalui browser di `http://localhost/es_coklat`.
+
 ## Struktur penting
 - Entry point: `index.php`
 - Konfigurasi database: `config/database.php`
